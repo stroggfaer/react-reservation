@@ -1,0 +1,211 @@
+.reservation__mod {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+
+}
+.reservation__mod  .title {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.reservation__mod .table-reservation .week .data_time {
+    font-size: 11px;
+}
+.reservation__mod .table-reservation .week .current {
+    background: seashell;
+}
+.reservation__mod .table-reservation {
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 100%;
+}
+.reservation__mod th {
+    padding: 5px 0px;
+}
+.reservation__mod .table-reservation td {
+    height: 60px;
+    width: 120px;
+    cursor: pointer;
+    background: #efefef;
+    border: 1px solid #c5c5c5;
+}
+.reservation__mod .table-reservation .week{
+
+}
+.reservation__mod .table-reservation td.active {
+    background: #5fb200;
+}
+.reservation__mod .table-reservation td.active div {
+    color: #ffffff;
+}
+.reservation__mod .table-reservation td.active .address {
+    font-size: 12px;
+}
+.reservation__mod .table-reservation td.active.warning {
+    background: #F9841D;
+}
+.reservation__mod .table-reservation td.active.warning button.btn {
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.reservation__mod .table-reservation td.time {
+    background: seashell;
+}
+.reservation__mod .table-reservation td.time:hover {
+    background: #f5ebe4;
+}
+.reservation__mod .table-reservation td.time div {
+    color: #333333;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.reservation__mod .table-reservation td.time div.trainer {
+    font-weight: normal;
+    font-size: 12px;
+}
+.reservation__mod .table-reservation td.time .price {
+    font-weight: normal;
+}
+.reservation__mod .table-reservation td.disabled {
+    opacity: .7;
+    cursor: default;
+}
+.reservation__mod .table-reservation td.disabled:hover {
+    opacity: .8;
+}
+.reservation__mod .table-reservation td.active {
+    background: rgba(17, 179, 66, 0.4);
+}
+.reservation__mod .table-reservation td.active:hover {
+    background: rgba(17, 179, 66, 0.5);
+}
+.reservation__mod .selected_reservation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px -5px;
+}
+.reservation__mod .selected_reservation .item {
+    width: 108px;
+    border: 1px solid #dddddd;
+    padding: 5px;
+    margin: 5px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.reservation__mod .selected_reservation .item:hover {
+    background: #f2f2f2;
+}
+
+.reservation__mod .buttons {
+    margin: 10px 0px;
+    text-align: right;
+}
+.btn-green{
+    padding: 8px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    background: #53a352;
+}
+.btn-green:hover{
+   background-color: #5fb55e;
+}
+.btn-green[disabled] {
+  opacity: .6;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*Модальное окно*/
+.modal__com  {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999;
+    display: block;
+
+}
+.modal__com .modal_content  {
+    z-index: 9990;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 250px;
+    min-height: 100px;
+    padding: 15px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+}
+.modal__com .modal_content .modal_header  {
+    padding: 10px 0px;
+    border-bottom: 1px solid #c5c5c5;
+    margin: -15px -15px 0;
+    position: relative;
+}
+.modal__com .modal_content .modal_header .modal_title {
+    text-align: center;
+    font-size: 18px;
+}
+.modal__com .modal_content .modal_header .modal_close {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    cursor: pointer;
+    font-size: 1.6em;
+    color: #00000082;
+}
+.modal__com .modal_content .modal_header .modal_close:hover{
+    opacity: .7;
+}
+.modal__com .modal_content .modal_body  {
+    padding: 5px 10px;
+}
+.modal__com .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+/*Форма*/
+.form__mod {
+    padding: 8px 0px 0px;
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+}
+.form__mod .input-form {
+    margin: 0 0 10px 0;
+}
+.form__mod .input-form  input{
+    padding: 7px 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form__mod .input-form.error input {
+    border-color:#e72f2a;
+
+}
+.form__mod .input-form .error {
+    color: #e72f2a;
+    font-size: 12px;
+}
+.form__mod .buttons {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
